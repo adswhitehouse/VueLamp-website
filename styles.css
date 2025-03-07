@@ -55,4 +55,106 @@ select {
 /* Body */
 body {
   font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: #1b1f25;
 }
+
+/* Header */
+header {
+  display: flex;
+  padding-inline: 7.5vw;
+  align-items: center;
+  height: 4rem;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  margin-left: auto;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.5s;
+}
+
+header nav ul li a:hover {
+  color: #00986f;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.menu {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+header button {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  background-color: #006c00;
+  border: none;
+  position: relative;
+  transition: background-color 0.5s;
+}
+
+.light-off {
+  background-color: #eceeed;
+}
+
+header button::after {
+  content: "";
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  background-color: gray;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2px;
+  background-color: #9b9698;
+  transition: right 0.5s;
+}
+
+.light-switch::after {
+  right: 41px;
+}
+
+/* Lamp */
+.lamp {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.lamp-body {
+  position: absolute;
+  width: 12rem;
+  left: 18.3rem;
+}
+
+.lamp-light {
+  position: absolute;
+  width: 41.5rem;
+  left: 3rem;
+  bottom: 1.15rem;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.light-opacity {
+  opacity: 0;
+}
+
